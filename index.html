@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZOLA</title>
+  <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="https://d1tntvpcrzvon2.cloudfront.net/vnassets/static/media/zola-logo.e36c4941.svg"
+             alt="Zola Homepage" class="nav-logo__img">
+      </a>
+    <a class="navbar-brand" href="#">                                                </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Log in</a>
+        </li>
+      </ul>
+        <button type="button" class="btn btn-info" >Register</button>
+    </div>
+  </div>
+</nav>
+<div class="alert alert-danger" role="alert" >
+  GET $25 to spend at Zola PLUS 20% OFF post-wedding when you sign up today*
+</div>
+<div class="jumbotron">
+ <div class="news">
+        <div class="col-12 col-sm-4">
+          <h1>The Easiest Wedding Registry</h1>
+          <h4>All the gifts you could want, convenience for you and your guests,free websites,and more</h4>
+          <div><button type="button" class="btn btn-info">START YOUR REGISTRY</button></div>
+        </div>
+        <div class="col-12 col-sm-8">
+
+        </div>
+      </div>
+</div>
+<div class="news">
+    <article class="container">
+        <div class="col-12 col-sm-12 align-self-center">
+          <h2>Brands Everyone Will Love</h2>
+          <p><h5>With over 500 registry staples and cool up-and-comers, there's something everyone will love,
+          with every price range in mind</h5>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 align-self-center">
+          <img class="img-fluid" src="https://d35uzl96cmnmq2.cloudfront.net/4fea5208-2a5e-4736-af90-de383f9f56cd.jpg" alt="KitchenAid">
+          <img class="img-fluid" src="https://d35uzl96cmnmq2.cloudfront.net/2be8a95c-3d74-4fc4-890e-47c1cecb64e7.jpg" alt="Cuisinart">
+          <img class="img-fluid" src="https://d35uzl96cmnmq2.cloudfront.net/5a734e81e3435608b608b9c8.jpg" alt="OXO">
+          <img class="img-fluid" src="https://d35uzl96cmnmq2.cloudfront.net/cms/2018/09/20/f0832f7e-3f68-413c-937b-feca0ca814bd.jpg" alt="Crate and Barrel">
+        </div>
+          </div>
+        <div><button type="button" class="btn btn-info">START YOUR REGISTRY</button></div>
+
+  </article>
+  </div>
+  <article class="container">
+    <div class="news">
+        <div class="col-10 col-sm-10 align-self-center">
+          <h2>Rated 5 Stars on Google</h2>
+          <h5>Join over 500,000 couples, who've registered at Zola</h5>
+          <div class="comments">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="card">
+        <img src='' class="card-img-top" alt="" id='first_im'>
+        <p id="first_user"></p>
+        <p class="card-text"  id="comm1"></p>
+      </div>
+        </div>
+      <div class="col-12 col-md-4">
+        <div class="card">
+        <img src='' class="card-img-top" alt="" id='second_im'>
+        <p id="second_user"></p>
+        <p class="card-text" id="comm2"></p>
+      </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card">
+        <img src='' class="card-img-top" alt="" id='third_im'>
+        <p id="third_user"></p>
+        <p class="card-text" id="comm3"></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<nav aria-label="...">
+    <ul class="pagination justify-content-center">
+    <li class="page-item" id="1"><a class="page-link" href="1">1</a></li>
+    <li class="page-item" id="2"><a class="page-link" href="2">2</a></li>
+    <li class="page-item" id="3"><a class="page-link" href="3">3</a></li>
+  </ul>
+    </nav>
+        </div>
+    </div>
+  </article>
+
+<hr>
+<footer>
+  <div class="container">
+    <div class="registration">
+    <form action="" method="post">
+      <div class="form-group">
+        <label>First Name:</label>
+        <input type="text" id="first_name" name="first_name">
+      </div>
+      <div class="form-group">
+        <label>Last Name:</label>
+        <input type="text" id="last_name" name="last_name">
+      </div>
+      <div class="form-group">
+        <label>Comment:</label>
+        <textarea id="msg" name="comment"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+  </form>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+<script src=" https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script>
+
+  $.ajax({
+    url: 'https://randomuser.me/api/?page=3&results=3&seed=abc',
+    data: '',
+    dataType: 'json',
+    success: function (data) {
+      document.getElementById("first_im").src = data.results[0].picture.large;
+      document.getElementById("first_user").textContent = data.results[0].name.title + ' ' + data.results[0].name.first + ' ' + data.results[0].name.last;
+      document.getElementById("comm1").textContent = data.results[0].login.sha256;
+      document.getElementById("second_im").src = data.results[1].picture.large;
+      document.getElementById("second_user").textContent = data.results[1].name.title + ' ' + data.results[1].name.first + ' ' + data.results[1].name.last;
+      document.getElementById("comm2").textContent = data.results[1].login.sha256;
+      document.getElementById("third_im").src = data.results[2].picture.large;
+      document.getElementById("third_user").textContent = data.results[2].name.title + ' ' + data.results[2].name.first + ' ' + data.results[2].name.last;
+      document.getElementById("comm3").textContent = data.results[2].login.sha256;
+    }
+  })
+  $('[href="1"]').on('click', function () {
+        event.preventDefault();
+        $.ajax({
+            url: 'https://randomuser.me/api/?page=3&results=3&seed=abc',
+            data: '',
+            dataType: 'json',
+            success: function (data) {
+                pagination(data);
+            }
+        })
+    })
+
+    $('[href="2"]').on('click', function () {
+        event.preventDefault();
+        $.ajax({
+            url: 'https://randomuser.me/api/?page=54&results=3&seed=abc',
+            data: '',
+            dataType: 'json',
+            success: function (data) {
+                pagination(data);
+            }
+        })
+    })
+
+    $('[href="3"]').on('click', function () {
+        event.preventDefault();
+        $.ajax({
+            url: 'https://randomuser.me/api/?page=11&results=3&seed=abc',
+            data: '',
+            dataType: 'json',
+            success: function (data) {
+                pagination(data);
+            }
+        })
+    })
+
+    function pagination(data) {
+        document.getElementById("first_im").src = data.results[0].picture.large;
+        document.getElementById("first_user").textContent = data.results[0].name.title + ' ' + data.results[0].name.first + ' ' + data.results[0].name.last;
+        document.getElementById("comm1").textContent = data.results[0].login.sha256;
+        document.getElementById("second_im").src = data.results[1].picture.large;
+        document.getElementById("second_user").textContent = data.results[1].name.title + ' ' + data.results[1].name.first + ' ' + data.results[1].name.last;
+        document.getElementById("comm2").textContent = data.results[1].login.sha256;
+        document.getElementById("third_im").src = data.results[2].picture.large;
+        document.getElementById("third_user").textContent = data.results[2].name.title + ' ' + data.results[2].name.first + ' ' + data.results[2].name.last;
+        document.getElementById("comm3").textContent = data.results[2].login.sha256;
+    }
+
+    $('form').submit(function (event) {
+        event.preventDefault();
+
+        const form = $('form');
+        let post_data = $('form').serializeArray();
+
+        $.ajax({
+            url: 'https://test.tdev.agency/',
+            method: 'post',
+            data: post_data,
+            success: (response) => alert('success'),
+            error: e => {
+                alert(JSON.stringify(post_data))
+            }
+        })
+
+    });
+    const a = function (response) {
+        return alert('')
+    }
+
+
+</script>
